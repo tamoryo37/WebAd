@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.campaign-table input,
+.campaign-table select,
+.campaign-table textarea {
+  @apply text-xs px-1 py-0.5;
+  min-width: 0;
+}
+
+.campaign-table td {
+  @apply px-1 py-1 text-xs;
+  overflow: hidden;
+  max-width: 0;
+}
+
+.campaign-table td > * {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.campaign-table td > div {
+  display: flex;
+}
+
+.campaign-table th {
+  user-select: none;
+  overflow: hidden;
+}
+
+.campaign-table td > input,
+.campaign-table td > select,
+.campaign-table td > textarea {
+  width: 100%;
+  min-width: 0;
+}
+
+.campaign-table .truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
